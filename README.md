@@ -5,10 +5,11 @@ Portuguese ID and NIF validation checker
 * The code works with python 3.6  
 * The code may contain **portuguese language**
 ---
-The portuguese ID, known in Portugal as *Cart„o de cidad„o*, is the first part of the code.  
-The algorithm is in the pdf file along with this post and as a example code in C#. Since we were learning Python 3, we had to translate the C# code into pyhton. 
+The portuguese ID, known in Portugal as *Cart√£o de cidad√£o*, is the first part of the code.  
+The algorithm is in the pdf file along with this post and has a example code in C#. Since we were learning Python 3, we had to translate the C# code into pyhton. 
 if you want only the function I create to validate the ID/CC, you can copy the following code:  
 '''
+
     def verificacao():
         listaalfa = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
         listanum = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]        
@@ -41,12 +42,14 @@ if you want only the function I create to validate the ID/CC, you can copy the f
             else:
                 print('cartao de cidadao invalido')
                 self.labelresult2 = Label(self.master,text='cc invalido',fg='red').grid(row=2,column=1)
+
 '''
 ---
-The NIF, known in Portugal as *Numero de IdentificaÁ„o Fiscal*, or Fiscal Code, was made with the guide of the portuguese wikipedia (https://pt.wikipedia.org/wiki/N%C3%BAmero_de_identifica%C3%A7%C3%A3o_fiscal).  
+The NIF, known in Portugal as *Numero de Identifica√ß√£o Fiscal*, or Fiscal Code, was made with the guide of the portuguese wikipedia (https://pt.wikipedia.org/wiki/N%C3%BAmero_de_identifica%C3%A7%C3%A3o_fiscal).  
 if you want only the python code:  
 '''
-    def verificacao():
+
+def verificacao():
         nif = self.pesquisa.get()
         
         soma = 0
@@ -72,4 +75,5 @@ if you want only the python code:
             print('invalido')
             self.labelresult2 = Label(self.master,text='NIF invalido',fg='red').grid(row=2,column=1)
         return
+
 '''
