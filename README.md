@@ -49,7 +49,7 @@ The NIF, known in Portugal as *Numero de Identificação Fiscal*, or Fiscal Code
 if you want only the python code:  
 '''
 
-def verificacao():
+    def verificacao():
         nif = self.pesquisa.get()
         
         soma = 0
