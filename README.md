@@ -20,7 +20,6 @@ if you want only the function I create to validate the ID/CC, you can copy the f
         soma = 0
         if len(cc) != 12:
             print('numero de cartao de cidadao invalido')
-            self.labelresult = Label(self.master,text='cc invalido', fg='red').grid(row=2,column=1)
         else:
             for i in range (len(cc)-1,-1,-1):
                 if i % 2 == 0:
@@ -38,11 +37,9 @@ if you want only the function I create to validate the ID/CC, you can copy the f
             
             if soma == 0:
                 print('cartao de cidadao valido')
-                self.labelresult1 = Label(self.master,text='cc valido',fg='green').grid(row=2,column=1)
             else:
                 print('cartao de cidadao invalido')
-                self.labelresult2 = Label(self.master,text='cc invalido',fg='red').grid(row=2,column=1)
-
+     
 '''
 ---
 The NIF, known in Portugal as *Numero de Identificação Fiscal*, or Fiscal Code, was made with the guide of the portuguese wikipedia (https://pt.wikipedia.org/wiki/N%C3%BAmero_de_identifica%C3%A7%C3%A3o_fiscal).  
@@ -56,7 +53,6 @@ if you want only the python code:
         verificacao = 0
         if len(nif) != 9:
             print('invalido')
-            self.labelresult2 = Label(self.master, text='NIF invalido', fg='red').grid(row=2, column=1)
             return
         else:
             index = 7
@@ -70,10 +66,8 @@ if you want only the python code:
         verificacao = soma % 11
         if verificacao == int(nif[8]):
             print('valido')
-            self.labelresult1 = Label(self.master,text='NIF valido',fg='green').grid(row=2,column=1)
         else:
             print('invalido')
-            self.labelresult2 = Label(self.master,text='NIF invalido',fg='red').grid(row=2,column=1)
         return
 
 '''
