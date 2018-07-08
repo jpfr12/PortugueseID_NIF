@@ -3,7 +3,9 @@ Portuguese ID and NIF validation checker
 
 * This was part of a project when I was student at *University of The Azores*.  
 * The code works with python 3.6  
-* The code may contain **portuguese language**
+* The code may contain **portuguese language**  
+* The Python file contains a GUI.  
+
 ---
 The portuguese ID, known in Portugal as *Cartão de cidadão*, is the first part of the code.  
 The algorithm is in the pdf file along with this post and has a example code in C#. Since we were learning Python 3, we had to translate the C# code into pyhton. 
@@ -59,15 +61,13 @@ if you want only the python code:
             for i in range(2,10):
                 soma += int(nif[index])*i
                 index -= 1
-        if soma >10:
-            soma = 11-soma
-        else:
-            pass
-        verificacao = soma % 11
-        if verificacao == int(nif[8]):
-            print('valido')
-        else:
-            print('invalido')
-        return
+            if soma >10:
+                soma = 11-soma
+            verificacao = soma % 11
+            if verificacao == int(nif[8]):
+                print('valido')
+            else:
+                print('invalido')
+                
 
 '''
