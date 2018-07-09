@@ -98,18 +98,17 @@ class NIF():
             for i in range(2,10):
                 soma += int(nif[index])*i
                 index -= 1
-        if soma >10:
-            soma = 11-soma
-        else:
-            pass
-        verificacao = soma % 11
-        if verificacao == int(nif[8]):
-            print('valido')
-            self.labelresult1 = Label(self.master,text='NIF valido',fg='green').grid(row=2,column=1)
-        else:
-            print('invalido')
-            self.labelresult2 = Label(self.master,text='NIF invalido',fg='red').grid(row=2,column=1)
-        return
+            if soma >10:
+                soma = 11-soma
+            else:
+                pass
+            verificacao = soma % 11
+            if verificacao == int(nif[8]):
+                print('valido')
+                self.labelresult1 = Label(self.master,text='NIF valido',fg='green').grid(row=2,column=1)
+            else:
+                print('invalido')
+                self.labelresult2 = Label(self.master,text='NIF invalido',fg='red').grid(row=2,column=1)
             
 def main():
     root = Tk()
