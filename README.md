@@ -61,9 +61,11 @@ if you want only the python code:
             for i in range(2,10):
                 soma += int(nif[index])*i
                 index -= 1
-            if soma >10:
-                soma = 11-soma
             verificacao = soma % 11
+            if verificacao == 0 or verificacao == 1:
+                verificacao = 0
+            else:
+                verificacao = 11 - verificacao
             if verificacao == int(nif[8]):
                 print('valido')
             else:
