@@ -98,11 +98,11 @@ class NIF():
             for i in range(2,10):
                 soma += int(nif[index])*i
                 index -= 1
-            if soma >10:
-                soma = 11-soma
-            else:
-                pass
             verificacao = soma % 11
+            if verificacao == 0 or verificacao == 1:
+                verificacao = 0
+            else:
+                verificacao = 11 - verificacao
             if verificacao == int(nif[8]):
                 print('valido')
                 self.labelresult1 = Label(self.master,text='NIF valido',fg='green').grid(row=2,column=1)
