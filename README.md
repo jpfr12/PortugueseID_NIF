@@ -47,7 +47,8 @@ if you want only the function I create to validate the ID/CC, you can copy the f
 ---
 The NIF, known in Portugal as *Numero de Identificação Fiscal*, or Fiscal Code, was made with the guide of the portuguese wikipedia (https://pt.wikipedia.org/wiki/N%C3%BAmero_de_identifica%C3%A7%C3%A3o_fiscal).  
 if you want only the python code:  
-''' bash
+
+``` bash
 
     def verificacao():
         nif = input()
@@ -73,4 +74,4 @@ if you want only the python code:
                 print('invalido')
                 
 
-'''
+```
