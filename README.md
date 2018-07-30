@@ -8,7 +8,7 @@ Portuguese ID and NIF validation checker
 
 ---
 The portuguese ID, known in Portugal as *Cartão de cidadão*, is the first part of the code.  
-The algorithm is in the pdf file along with this post and has a example code in C#. Since we were learning Python 3, we had to translate the C# code into pyhton. 
+The algorithm is in the pdf file along with this post and has an example code in C#. Since we were learning Python 3, we had to translate the C# code into pyhton. 
 if you want only the function I create to validate the ID/CC, you can copy the following code:  
 
 ``` bash
