@@ -58,20 +58,19 @@ if you want only the python code:
         if len(nif) != 9:
             print('invalido')
             return
+        index = 7
+        for i in range(2,10):
+            soma += int(nif[index])*i
+            index -= 1
+        verificacao = soma % 11
+        if verificacao == 0 or verificacao == 1:
+            verificacao = 0
         else:
-            index = 7
-            for i in range(2,10):
-                soma += int(nif[index])*i
-                index -= 1
-            verificacao = soma % 11
-            if verificacao == 0 or verificacao == 1:
-                verificacao = 0
-            else:
-                verificacao = 11 - verificacao
-            if verificacao == int(nif[8]):
-                print('valido')
-            else:
-                print('invalido')
+            verificacao = 11 - verificacao
+        if verificacao == int(nif[8]):
+            print('valido')
+        else:
+            print('invalido')
                 
 
 ```
