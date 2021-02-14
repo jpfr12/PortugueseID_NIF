@@ -4,7 +4,7 @@ Portuguese ID and NIF validation checker
 * This was part of a project when I was student at *University of The Azores*.  
 * The code works with python 3.6  
 * The code may contain **portuguese language**  
-* The Python file contains a GUI.  
+* The Python file contains a GUI, created with the *library Tkinter*.  
 
 ---
 The portuguese ID, known in Portugal as *Cartão de cidadão*, is the first part of the code.  
